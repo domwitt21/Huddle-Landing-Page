@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+html, body {
+    max-width: 100%;
+}
+p {
+    font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+h1 {
+    font-weight: 700;
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.container {
+    position: absolute;
+    left: 0;
+    bottom: 15px;
+}
+img.bgImgOverlay {
+    background-color: #684BB1;
+    position: absolute;
+    width: 100%;
+    height: 937px;
+    top: 0;
+    left: 0;
+}
+.huddleLogo {
+    position: relative;
+    float: left;
+    margin-top: -10px;
+    margin-left: 90px;
+    width: 15%;
+    filter: invert(99%) sepia(80%) saturate(2%) hue-rotate(282deg) brightness(108%) contrast(101%);
+}
+.screensImg {
+    position: relative;
+    margin-top: 10%;
+    margin-left: -15%;
+    margin-bottom: 5%;
+}
+.infoTxt {
+    float: right;
+    color: #ffffff;
+    margin-right: 22%;
+    margin-top: 11%;
+    font-size: 18px;
+}
+.infoTxt h1 {
+    font-size: 42px;
+}
+.infoTxt p {
+    font-size: 20px;
+    line-height: 30px;
+}
+.infoTxt a {
+    background-color: white;
+    color: black;
+    position: relative;
+    top: 25px;
+    left: 10px;
+    text-decoration: none;
+    padding-left: 12%;
+    padding-right: 12%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.39);
+    letter-spacing: 1px;
+    line-height: .5%;
+    font-family: 'Open Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: .25s;
+}
+.infoTxt a:hover {
+    color: white;
+    background-color: #E880E8;
+    box-shadow: 0px 0px 0px 0px black;
+}
+
+div.socialContainer img {
+    float: right;
+    display: block;
+    margin-top: -10%;
+    margin-bottom: 0;
+    margin-right: 5%;
+    position: relative;
+    top: 130px;
+}
+.facebook {
+    width: 48px;
+    padding-left: 17px;
+    padding-right: 17px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    filter: invert(100%) sepia(100%) saturate(22%) hue-rotate(344deg) brightness(105%) contrast(108%);
+    border: 1px solid;
+    border-radius: 100px;
+    transition: .25s linear;
+}
+.facebook:hover {
+    cursor: pointer;
+    filter: invert(61%) sepia(55%) saturate(5414%) hue-rotate(294deg) brightness(102%) contrast(102%);
+}
+.instagram {
+    width: 50px;
+    right: 65px;
+    border: 1px solid;
+    border-radius: 100px;
+    padding: 11px;
+    filter: invert(100%) sepia(100%) saturate(22%) hue-rotate(344deg) brightness(105%) contrast(108%);
+    transition: .25s linear;
+}
+.instagram:hover {
+    cursor: pointer;
+    filter: invert(61%) sepia(55%) saturate(5414%) hue-rotate(294deg) brightness(102%) contrast(102%);
+}
+.twitter {
+    width: 50px;
+    padding: 5px;
+    right: 135px;
+    border: 1px solid;
+    filter: invert(100%) sepia(100%) saturate(22%) hue-rotate(344deg) brightness(105%) contrast(108%);
+    border-radius: 100px;
+    transition: .25s linear;
+}
+.twitter:hover {
+    cursor: pointer;
+    filter: invert(61%) sepia(55%) saturate(5414%) hue-rotate(294deg) brightness(102%) contrast(102%);
+}
+
+.attribution {
+    font-size: 11px; text-align: center;
+    color: white;
+}
+.attribution a {
+    color: rgb(253, 182, 182)
+}
+
+
+@media screen and (max-width: 1440px) {
+    img.bgImgOverlay { height: 936.5px; }
+    div.socialContainer img { display: block; margin-top: 15%; left: 880px; }
+    .huddleLogo { display: block; left: -15px; top: 350px; }
+    .screensImg { display: block; left: 280px; top: 400px; }
+    .infoTxt { position: relative; bottom: 300px; left: 250px; }
+    .facebook { margin-left: -3%; }
+    .instagram { margin-left: -3.2%; }
+}
+
+
+@media screen and (max-width: 375px) {
+    .container { text-align: center; }
+    img.bgImgOverlay { height: 536.5px; transform: rotate(270deg); display: block; top: -120px; left: -50px; }
+    html { background-color: #684BB1; width: 100%; overflow: hidden; }
+    div.socialContainer img { display: block; margin-top: 15%; left: 880px; }
+    .huddleLogo { display: block; left: -45px; top: 190px; width: 40%; }
+    .screensImg { display: block; left: 80px; top: 250px; width: 85%; }
+    .infoTxt a:hover { cursor: pointer; color: white; background-color: #E880E8; box-shadow: 0px 0px 0px 0px black; }
+    .infoTxt a { font-size: 15px; display: block; margin-right: 10%; padding-top: 10%; padding-bottom: 10%; }
+    .infoTxt p { font-size: 15px; display: block; margin-right: 10%; }
+    .infoTxt h1 { font-size: 20px; display: block; margin-right: 10%; }
+    .infoTxt { position: relative; bottom: 300px; left: 50px; top: 250px; font-size: 10px; }
+    .socialContainer { position: relative; right: 965px; bottom: 120px; }
+    .facebook {  }
+    .instagram {  }
+    .attribution { position: relative; top: 300px; margin-bottom: 70%;}
+}
